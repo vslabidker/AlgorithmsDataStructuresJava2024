@@ -64,13 +64,7 @@ public class ArrayList1 {
         System.out.println("Task13" + "\n" + isEmptyList);
 
         //14
-        int n = 8;
-        while(n != 0){
-            n--;
-            colors.add("сolor" + n);
-        }
-        Collections.reverse(colors);
-        System.out.println("Task14" + "\n" + colors);
+        colors.ensureCapacity(100);
 
         //15
         colors.trimToSize();
